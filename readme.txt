@@ -1,10 +1,10 @@
-=== WordPress Megosztás ===
+﻿=== WordPress Megosztás ===
 Contributors: kardiweb, kardiweb 
 Donate link: http://www.kardiweb.org/
 Tags: megosztas, megosztás, share
 Requires at least: 1.5
-Tested up to: 3.3.1
-Stable tag: 3.3.1
+Tested up to: 3.3.2
+Stable tag: 3.3.2
 
 WordPress Megosztás
 
