@@ -33,8 +33,7 @@ WordPress Megosztás
  Használhatjuk akár a bemutató tartalom megjelenítésénél is. Ez dokumentálva van a forráskódban. 
 
 == Screenshots ==
-
-Hamarosan
+1. Használat közben
 == Changelog ==
 
 = 1.5.1 =
