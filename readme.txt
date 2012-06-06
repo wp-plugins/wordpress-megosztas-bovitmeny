@@ -34,7 +34,8 @@ WordPress Megosztás
 
 == Screenshots ==
 
-Hamarosan
+1. Használat közben
+
 == Changelog ==
 
 = 1.5.1 =
