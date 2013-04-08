@@ -3,7 +3,7 @@
 Plugin Name: Megosztás
 Plugin URI: http://www.wordpress.org/extend/plugins/wordpress-megosztas-bovitmeny/
 Description: Ezzel a kiegészítővel számos látogatót szerezhetünk weboldalunkra. Egyszerűen helyezhetjük el a magyar és angol social network ikonokat (Facebook, Twitter, Iwiw, Startlap, Citromail, Tumblr, Google plus, So.cl, E-mail) bejegyzéseink végén, hogy tartalmainkat a felhasználok megosztassák a legnagyobb legnépszerűbb közösségi oldalakon. Így mások is értesülhetnek az értékes cikkeinkről. Bekapcsolás után azonnal működik! Semmilyen beállítást nem igényel!
-Version: 1.5.3 RC1
+Version: 1.5.3
 Author: KardiWeb
 Author URI: http://www.kardiweb.org/
 License: GNU/GPL v2
