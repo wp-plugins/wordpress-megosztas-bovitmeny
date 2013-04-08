@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/**
+ * Ehhez a stíluslaphoz könnyedén hozzáadhatjuk azoknak a stílus szabályoknak a nevét amit nem szeretnénk látni a kinyomtatott lapon vagy pdf dokumentumban
+ * Íme néhány példa: 
+ */
+
+#header, .post_taxonomy, .extra_posts, .the_author .avatar, .the_author_p, .comments, .wp-pagenavi, .megosztas, .entry-meta, .comments-title, .commentlist, .replay, #sidebar, #footer {
+display : none;
+}
