@@ -1,9 +1,5 @@
-#megosztas{
-width: 300px;
-height: 80px;
-display: block;
-font-size: 12px;
-}
+@charset "UTF-8";
+#megosztas{width: 300px;height: 80px;display: block;font-size: 12px;}
 a.facebook, a.facebook:hover{background-image: url("../img/facebook.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
 a.twitter, a.twitter:hover{background-image: url("../img/twitter.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
 a.socl, a.socl:hover{background-image: url("../img/socl.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}

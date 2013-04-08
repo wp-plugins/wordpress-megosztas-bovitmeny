@@ -1,17 +1,19 @@
 === WordPress Megosztás ===
 Contributors: KardiWeb
 Donate link: http://www.kardiweb.org/
-Tags: megosztas, megosztás, share, facebook, twitter, iwiw, startlap, citromail, tumblr, so.cl, google+, google plus, google plus one, email, e-mail
-Requires at least: 3.4
-Tested up to: 3.4
-Stable tag: 1.5.2
+Tags: megosztas, megosztás, share, facebook, twitter, iwiw, startlap, citromail, tumblr, so.cl, google+, google plus, google plus one, email, e-mail, print, nyomtatás, rss, rss feed
+Requires at least: 3.5.1
+Tested up to: 3.6
+Stable tag: 1.5.3
 License: GPLv2 or later
 
 A WordPress Megosztás Bővítménnyel megoszthatjuk tartalmainkat a legnagyobb Magyar és Külföldi közösségi oldalakon
 
 == Description ==
 
- Ezzel a bővítménnyel számos látogatót szerezhetünk weboldalunkra. Egyszerűen helyezhetjük el a magyar és angol social network ikonokat (Facebook, Twitter, Iwiw, Startlap, Citromail, Tumblr, Google plus, So.cl E-mail) bejegyzéseink végén, hogy tartalmainkat a felhasználok megosztassák a legnagyobb legnépszerűbb közösségi oldalakon. Így mások is értesülhetnek az értékes cikkeinkről. Bekapcsolás után azonnal működik! Semmilyen beállítást nem igényel!
+ [Demo](http://kardiweb.blogja.net) | [Laszlo Espadas](http://www.kardiweb.org/)
+
+ Ezzel a bővítménnyel számos látogatót szerezhetünk weboldalunkra. Egyszerűen helyezhetjük el a magyar és angol social network ikonokat (Facebook, Twitter, Iwiw, Startlap, Citromail, Tumblr, Google plus, So.cl, E-mail, Nyomtatás) bejegyzéseinkben, hogy tartalmainkat a felhasználok megosztassák a legnagyobb legnépszerűbb közösségi oldalakon. Így mások is értesülhetnek az értékes cikkeinkről. Bekapcsolás után azonnal működésbe lép. Semmilyen beállítást nem igényel.
 
 == Installation ==
 
@@ -31,12 +33,22 @@ A WordPress Megosztás Bővítménnyel megoszthatjuk tartalmainkat a legnagyobb 
 = Egyéb módszerek =
  Használhatjuk akár a teljes tartalom megjelenítésénél is. Ez dokumentálva van a forráskódban.
  Használhatjuk akár a bemutató tartalom megjelenítésénél is. Ez dokumentálva van a forráskódban. 
+ Nyomtatási kép formázási lehetőség. Ez dokumentálva van a (/css/nyomtatas.css) forráskódban.
 
 == Screenshots ==
 
 1. Használat közben
 
 == Changelog ==
+
+= 1.5.3 =
+* WordPress 3.6 kompatibilitás
+* Nyelv kivezetése a forráskódból
+* RSS hírcsatorna hozzáadása
+* Forráskód optimalizálás és kommentelés
+* Nyomtatás gomb, stíluslap, javascript hozzáadása
+* E-mail, So.cl ikon csere
+* Új képernyőkép/pillanatkép
 
 = 1.5.2 =
 * WordPress 3.4 Kompatibilitás
@@ -85,6 +97,8 @@ A WordPress Megosztás Bővítménnyel megoszthatjuk tartalmainkat a legnagyobb 
 * Elkészült a Megosztás bővítmény kiadásra szánt változata!
 
 == Upgrade Notice ==
+
+= 1.5.3 =
 
 = 1.5.2 =
 
