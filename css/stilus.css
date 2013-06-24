@@ -10,4 +10,5 @@ a.tumblr, a.tumblr:hover{background-image: url("../img/tumblr.png");width:20px;h
 a.gplusz, a.gplusz:hover{background-image: url("../img/gplus.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
 a.email, a.email:hover{background-image: url("../img/email.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
 a.rss, a.rss:hover{background-image: url("../img/rss.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
+a.hozzaszolas_rss, a.hozzaszolas_rss:hover{background-image: url("../img/hozzaszolas_rss.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}
 a.nyomtatas, a.nyomtatas:hover{background-image: url("../img/nyomtatas.png");width:20px;height:20px;display:block;float:left;margin-left:10px;text-decoration: none;}

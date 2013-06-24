@@ -1,41 +1,171 @@
 <?php
+/* ADMINISZTRÁCIÓS FELÜLET - FEJLESZTÉS ALATT */
 
-/* ADMINISZTRÁCIÓS FELÜLET HAMAROSAN */
+add_action('admin_init', 'kwm_admin_init' );
+add_action('admin_menu', 'kwm_admin_oldal_hozzaadas');
 
-add_action('admin_menu', 'megosztas_admin');
-function megosztas_admin() {
-   add_submenu_page('options-general.php', 'Megosztás', 'Megosztás', 'manage_options', 'megosztas-admin', 'megosztas_admin_panel');
+// Beállítások regisztrálása az admin_init funkciók közé
+function kwm_admin_init(){
+	register_setting( 'kwm_beallitas_mezok', 'kwm_beallitasok', 'kwm_beallitasok_ervenyesites' );
+	register_setting( 'kwm_beallitas_nyomtat_css_mezok', 'kwm_nyomtat_css_beallitasok', 'kwm_nyomtat_css_beallitasok_ervenyesites' );
 }
-function megosztas_admin_panel(){
-?>
 
-<div class="wrap">
-<?php screen_icon(); ?>
- <h2>WordPress Megosztás Bővítmény</h2>
+// Oldal hozzáadása a Beállítások almenühöz
+function kwm_admin_oldal_hozzaadas() {
+	add_options_page('WP Megosztás beállítások', 'WP Megosztás', 'manage_options', 'kwm_admin', 'kwm_admin_oldal');
+}
 
-<!-- Támogatás / Licenc -->
-<table class="widefat">
-<thead><tr><th>Támogatás/Licenc</th></tr></thead>
+// Adminisztrációs felület
+function kwm_admin_oldal() {
+	?>
+	<div class="wrap">
+	<?php screen_icon(); ?>
+	<h2>WP Megosztás beállítások | <a href="#segedlet">Segédlet / Használati útmutató</a></h2>
+<div id="poststuff">
+<div id="post-body" class="metabox-holder columns-2">
+
+<!-- Megosztás gomb felirat beállítások -->
+<div id="post-body-content">
+<div class="meta-box-sortables ui-sortable">
+<div class="postbox">
+<div class="inside">
+<table class="widefat" cellspacing="0">
+<thead><tr><th class="row-title">Gomb szöveg beállítások</th><th></th></tr></thead>
 <tbody>
-   <tr>
-     <td>A WordPress Megosztás Bővítmény programozása, karbantartása jelentős munkát igényelt és igényel, ezért alkottam meg az alábbi liszencet:
-     <ul>
-     <li><em> 1. A felhasználó ingyenesen használhatja, telepítheti a bővítményeket saját weboldalára, blogjára. A fájlokba igénye szerint belejavíthat.</em></li>
-     <li><em> 2. A bővítményt a GPL/GNU licensz értelmében nem értékesítheti, letöltésként nem publikálhatja. Közvetlen publikálás helyett javaslom link használatát a bemutatkozó oldalamhoz!</em></li>
-     </ul>
-     Hiba esetén kérem vegye fel velem a <script>//<![CDATA[
-     eval(unescape('%70%6c%75%6d%69%34%31%3d%5b%27%25%36%62%25%37%37%27%2c%5b%27%25%36%66%25%37%32%25%36%37%27%2c%27%25%36%62%25%36%31%25%37%32%25%36%34%25%36%39%25%37%37%25%36%35%25%36%32%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%65%77%70%6f%70%30%37%3d%27%6b%61%70%63%73%6f%6c%61%74%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%65%77%70%6f%70%30%37%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%70%6c%75%6d%69%34%31%29%29%3b'))
-     //]]></script>-ot, hogy mielőbb el tudjam végezni a javítást.
-     <br />
-     <br />
-     Amennyiben tetszik a wordpress megosztás bővítmény, kérem fontolja meg a támogatást.
-     <br />
-     <form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post"><div class="paypal-donations"><input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="&#108;&#097;&#115;&#122;&#108;&#111;&#046;&#101;&#115;&#112;&#097;&#100;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" /><input type="hidden" name="return" value="http://www.kardiweb.org/" /><input type="hidden" name="item_name" value="Laszlo Espadas" /><input type="hidden" name="item_number" value="KardiWeb www.kardiweb.org" /><input type="hidden" name="currency_code" value="HUF" /><input type="image" src="<?php bloginfo('url'); ?>/wp-content/plugins/wordpress-megosztas-bovitmeny/img/tagmogatas.png" name="submit" alt="PayPal támogatás" /><img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></div></form>
-     </td>
-   </tr>
+
+		<form name="form" method="post" action="options.php">
+			<?php settings_fields('kwm_beallitas_mezok'); ?>
+			<?php $options = get_option('kwm_beallitasok'); ?>
+				
+				<tr valign="top">
+                                <td scope="row">
+				<dd>Megosztás szöveg:</dd>
+				<dd><input type="text" name="kwm_beallitasok[msz_felirat]" placeholder="Megosztás" value="<?php echo $options['msz_felirat']; ?>" /></dd></td>
+				
+				
+				<td><dd>Facebook szöveg:</dd>
+				<dd><input type="text" name="kwm_beallitasok[fb_felirat]" placeholder="Megosztom a facebookon" value="<?php echo $options['fb_felirat']; ?>" /> </dd></td>
+				</tr>
+				
+				<tr valign="top">
+                                <td scope="row">
+				<dd>Twitter szöveg:</dd>
+				<dd><input type="text" name="kwm_beallitasok[tw_felirat]" placeholder="Megosztom a twitteren" value="<?php echo $options['tw_felirat']; ?>" /> </dd></td>
+				
+				<td><dd>Iwiw szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[iwiw_felirat]" placeholder="Megosztom az iwiwen" value="<?php echo $options['iwiw_felirat']; ?>" /> </dd></td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                <td scope="row">
+                                <dd>Startlap szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[slap_felirat]" placeholder="Megosztom a startlapon" value="<?php echo $options['slap_felirat']; ?>" /> </dd></td>
+                                
+                                <td><dd>Citromail szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[cmail_felirat]" placeholder="Megosztom a citromailen" value="<?php echo $options['cmail_felirat']; ?>" /></dd></td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                <td scope="row">
+                                <dd>Tumblr szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[tumblr_felirat]" placeholder="Megosztom a tumblren" value="<?php echo $options['tumblr_felirat']; ?>" /></dd></td>
+                                
+                                <td><dd>Google+ szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[gplusz_felirat]" placeholder="Megosztom a google plusszon" value="<?php echo $options['gplusz_felirat']; ?>" /></dd></td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                <td scope="row">
+                                <dd>So.cl szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[socl_felirat]" placeholder="Megosztom a so.cl-en" value="<?php echo $options['socl_felirat']; ?>" /></dd></td>
+                                
+                                <td><dd>RSS hírcsatorna szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[rss_felirat]" placeholder="Felíratkozok az rss hírcsatornára" value="<?php echo $options['rss_felirat']; ?>" /></dd></td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                <td scope="row">
+                                <dd>Email szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[email_felirat]" placeholder="Elküldöm e-mailben" value="<?php echo $options['email_felirat']; ?>" /></dd></td>
+                                
+                                <td><dd>Nyomtatás szöveg:</dd>
+                                <dd><input type="text" name="kwm_beallitasok[nyomtat_felirat]" placeholder="Nyomtatás" value="<?php echo $options['nyomtat_felirat']; ?>" /></dd></td>
+                                </tr>
+				
+				<tr valign="top">
+                                <td scope="row">
+			        <dd><p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></p></dd></td>
+			        </tr>
+		</form>
+
 </tbody>
-<tfoot><tr><th>Copyright &copy; 1986 - <?php echo date("Y"); ?> <a target="_blank" href="http://www.kardiweb.org/">Laszlo Espadas - KardiWeb</a>.</th></tr></tfoot>
 </table>
-<!-- / Támogatás / Licenc -->
 </div>
-<?php } ?>
+</div>
+</div>
+</div>
+<!-- /Megosztás gomb felirat beállítások -->
+
+<!-- Oldalsáv -->
+<?php require_once('oldalsav.php'); ?>
+<!-- /Oldalsáv -->
+
+<!-- Segédlet / Használati útmutató -->
+<div id="post-body-content">
+<div class="meta-box-sortables ui-sortable">
+<div class="postbox">
+<div class="inside">
+<table class="widefat" cellspacing="0">
+<thead><tr><th class="row-title"><a name="segedlet">Segédlet / Használati útmutató</a></th><th></th></tr></thead>
+<tbody>
+<?php require_once('segedlet.php'); ?>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /Segédlet / Használati útmutató -->
+</div>
+</div>
+<?php }
+
+// Beállítások érvényesítése
+function kwm_beallitasok_ervenyesites($input) {
+
+	/* SZÖVEGEK ÉRVÉNYESÍTÉSE */
+	// Megosztás szöveg felirat
+	$input['msz_felirat'] =     wp_filter_nohtml_kses($input['msz_felirat']);
+	// Facebook felirat
+	$input['fb_felirat'] =      wp_filter_nohtml_kses($input['fb_felirat']);
+	// Twitter felirat
+	$input['tw_felirat'] =      wp_filter_nohtml_kses($input['tw_felirat']);
+	// Iwiw felirat
+	$input['iwiw_felirat'] =    wp_filter_nohtml_kses($input['iwiw_felirat']);
+	// Startlap felirat
+	$input['slap_felirat'] =    wp_filter_nohtml_kses($input['slap_felirat']);
+	// Citromail felirat
+	$input['cmail_felirat'] =   wp_filter_nohtml_kses($input['cmail_felirat']);
+	// Tumblr felirat
+	$input['tumblr_felirat'] =  wp_filter_nohtml_kses($input['tumblr_felirat']);
+	// Google+ felirat
+	$input['gplusz_felirat'] =  wp_filter_nohtml_kses($input['gplusz_felirat']);
+	// So.cl felirat
+	$input['socl_felirat'] =    wp_filter_nohtml_kses($input['socl_felirat']);
+	// Rss hírcsatorna felirat
+	$input['rss_felirat'] =     wp_filter_nohtml_kses($input['rss_felirat']);
+	// Email felirat
+	$input['email_felirat'] =   wp_filter_nohtml_kses($input['email_felirat']);
+	
+	return $input;
+}
+
+// Nyomtatás beállítások érvényesítése
+function kwm_nyomtat_css_beallitasok_ervenyesites($input){
+
+        /* SZÖVEGEK ÉRVÉNYESÍTÉSE */
+	// Nyomtatás szövegmező
+	$input['nyomtat'] =         wp_filter_nohtml_kses($input['nyomtat']);
+	
+	return $input;
+}
