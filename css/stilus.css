@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+a.facebook, a.facebook:hover {
+background-image : url("../img/facebook.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.twitter, a.twitter:hover {
+background-image : url("../img/twitter.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.iwiw, a.iwiw:hover {
+background-image : url("../img/iwiw.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.startlap, a.startlap:hover {
+background-image : url("../img/startlap.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.tumblr, a.tumblr:hover {
+background-image : url("../img/tumblr.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.gplusz, a.gplusz:hover {
+background-image : url("../img/gplus.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.email, a.email:hover {
+background-image : url("../img/email.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.rss, a.rss:hover {
+background-image : url("../img/rss.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
+
+a.nyomtatas, a.nyomtatas:hover {
+background-image : url("../img/nyomtatas.png");
+width : 32px;
+height : 32px;
+display : block;
+float : left;
+margin-left : 10px;
+text-decoration: none !important;
+}
