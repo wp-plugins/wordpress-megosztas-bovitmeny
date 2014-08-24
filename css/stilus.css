@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+a.facebook {
+  background-image : url("../img/facebook.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.facebook:hover {
+  opacity: 0.5;
+}
+
+a.twitter {
+  background-image : url("../img/twitter.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.twitter:hover {
+  opacity: 0.5;
+}
+
+a.linkedin {
+  background-image : url("../img/linkedin.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;  
+}
+a.linkedin:hover {
+  opacity: 0.5;
+}
+
+a.startlap {
+  background-image : url("../img/startlap.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;  
+}
+a.startlap:hover {
+  opacity: 0.5;
+}
+
+a.tumblr {
+  background-image : url("../img/tumblr.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; 
+}
+a.tumblr:hover {
+  opacity: 0.5;
+}
+
+a.gplusz {
+  background-image : url("../img/gplus.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; 
+}
+a.gplusz:hover {
+  opacity: 0.5;
+}
+
+a.email {
+  background-image : url("../img/email.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.email:hover {
+  opacity: 0.5;
+}
+
+a.rss {
+  background-image : url("../img/rss.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.rss:hover {
+  opacity: 0.5;
+}
+
+a.nyomtatas {
+  background-image : url("../img/nyomtatas.png");
+  width : 32px;
+  height : 32px;
+  display : block;
+  float : left;
+  margin-left : 10px;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.nyomtatas:hover {
+  opacity: 0.5;
+}
