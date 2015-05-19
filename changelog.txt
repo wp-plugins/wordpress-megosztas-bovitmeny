@@ -1,0 +1,111 @@
+2.3
+WordPress 4.0 kompatibilitás
+Iwiw kivezetése
+LinkedIn bevezetése
+Forráskód optimalizálás
+Felkészülés a 3.0 verzió fejlesztésére
+
+2.2
+
+WordPress 3.9 kompatibilitás
+Nem definált változó javítás
+Admin oldalsáv linkek módosítása
+
+2.1.1
+
+Felkerült a githubra is a bővítmény
+Hover effekt hozzáadása a stíluslaphoz
+Humans.txt fájl javítása
+WordPress 3.8.1 kompatibilitás
+WordPress verzió ellenőrzés verziő beállítása 3.5 verezióra
+
+2.1
+
+WordPress 3.8 kompatibilitás
+Új ikonkészlet
+So.cl kivezetése
+Citromail kivezetése
+Forráskód optimalizálás
+Megosztás hivatkozások javítása
+
+2.0
+
+WordPress 3.6 kompatibilitás
+Adminisztrációs felület elkészítése a gomb feliratoknak
+Segédlet / Használati útmutató elkészítése adminisztrációs felületen a bővítményhez
+Részletes dokumentáció elkészítése a forráskódban(is)
+Bővítmény adatbázis tábla eltávolító eszköz
+RSS ikon csere
+GNU/GPL v3 licenc használata
+WordPress verzió ellenörzés
+Printfriendly használata a nyomtatáshoz
+
+1.5.4
+
+Gyors hibajavítás
+
+1.5.3
+
+WordPress 3.6 kompatibilitás
+Nyelv kivezetése a forráskódból és Magyar nyelv használata
+RSS hírcsatorna hozzáadása
+Forráskód optimalizálás és kommentelés
+Nyomtatás gomb, stíluslap, javascript hozzáadása
+E-mail, So.cl ikon csere
+Új képernyőkép/pillanatkép
+
+1.5.2
+
+WordPress 3.4 Kompatibilitás
+So.cl megosztás hozzáadása
+
+1.5.1
+
+Shortcode (rövidkód) támogatás
+WordPress 3.3.2 kompatibilitás
+Forráskód optimalizálás
+
+1.5
+
+Teljesen újraírt forráskód
+PayPal támogatás hozzáadása admin.php hoz
+Admin mappa és admin.php hozzáadása
+Admin felület elkészítése
+Humans.txt hozzáadása
+Nyelv mappa és nyelvi fájlok hozzáadása
+Google Plus hozzáadása
+Mappák védelme index.php fájlal
+Automatikus frissítő script beépítése
+
+1.4.3
+
+Stíluslap elérés javítása
+
+1.4.2
+
+WordPress 3.3 kompatibilitás
+
+1.4.1
+
+Megkezdődött az adminisztrációs felület létrehozása.
+
+1.4
+
+Cascading Style Sheet (CSS) automatikus beszúrása a wp_head() funkcióba
+
+1.3
+
+Új E-mail megosztás lehetőség
+index.php hozzáadása a megosztás mappa védelmére
+
+1.2
+
+Cascading Style Sheet 3 használata
+
+1.1
+
+Apróbb hibajavítások
+
+1.0
+
+Elkészült a Megosztás bővítmény kiadásra szánt változata!

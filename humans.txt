@@ -1,0 +1,19 @@
+/* TEAM */
+Name:     Laszlo Espadas
+Title:    Ceo & Founding Developer
+Site:     http://kardiweb.github.io/
+Contact:  kardiweb at protonmail dot ch
+Location: Kecskemét, Hungary
+Twitter:  @KardiWeb
+Facebook: KardiWeb
+
+
+/* THANKS */
+Matt Mullenweg, WordPress, WordPress Magyarország, Farkas Győző
+
+/* META */
+	Last update: 2015/05/19
+	Language: Hungarian
+	Doctype: HTML5 & WordPress
+	IDE: Gedit, Krusader Internal Editor, Gimp
+        See: http://www.humanstxt.org/
